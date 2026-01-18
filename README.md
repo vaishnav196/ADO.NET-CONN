@@ -1,6 +1,7 @@
 # ADO.NET-CONN
 Connection String Setup (App.config)
-<configuration>
+
+"<configuration>
   <connectionStrings>
     <add name="DbConnection"
          connectionString="Server=YOUR_SERVER;
@@ -8,4 +9,4 @@ Connection String Setup (App.config)
                            Trusted_Connection=True;"
          providerName="System.Data.SqlClient"/>
   </connectionStrings>
-</configuration>
+</configuration>"
