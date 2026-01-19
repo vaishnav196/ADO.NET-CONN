@@ -10,13 +10,13 @@
          providerName="System.Data.SqlClient"/>
   </connectionStrings>
 </configuration>
-
+--------------------
 2)Creating SQL Connection (DbConnectionFactory.cs)
 
 
 using System.Configuration;
 using System.Data.SqlClient;
-
+-------------------
 namespace Data
 {
     public static class DbConnectionFactory
