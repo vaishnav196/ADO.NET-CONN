@@ -31,3 +31,28 @@ namespace Data
     }
 }
 
+-----------------
+
+public List<Employee> GetAllEmployees()
+{
+    var employees = new List<Employee>();
+
+    using (SqlConnection conn = DbConnectionFactory.GetConnection())
+    {
+        SqlCommand cmd = new SqlCommand("SELECT Id, Name, Salary FROM Employee", conn);
+        conn.Open();
+
+        SqlDataReader reader = cmd.ExecuteReader();
+        while (reader.Read())
+        {
+            employees.Add(new Employee
+            {
+                Id = reader.GetInt32(0),
+                Name = reader.GetString(1),
+                Salary = reader.GetDecimal(2)
+            });
+        }
+    }
+    return employees;
+}
+
