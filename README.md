@@ -66,4 +66,16 @@ using (SqlConnection conn = new SqlConnection(connectionString))
 
 ------------------
 
+SqlCommand cmd = new SqlCommand(
+    "SELECT Id, Name, Salary FROM Employee", conn);
+
+SqlDataReader reader = cmd.ExecuteReader();
+
+
+
+Uses ExecuteReader()
+✔ Used only for SELECT
+
+--------------
+
 
