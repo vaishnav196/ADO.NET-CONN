@@ -56,3 +56,14 @@ public List<Employee> GetAllEmployees()
     return employees;
 }
 
+------------------------------
+
+using (SqlConnection conn = new SqlConnection(connectionString))
+{
+    conn.Open();
+}
+
+
+------------------
+
+
