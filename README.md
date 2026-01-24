@@ -17,7 +17,7 @@
 
 using System.Configuration;
 using System.Data.SqlClient;
--------------------
+--------------------------------------
 
     public static class DbConnectionFactory
     {
